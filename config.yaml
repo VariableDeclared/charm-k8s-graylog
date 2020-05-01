@@ -1,0 +1,5 @@
+options:
+  graylog-pass:
+    description: "Graylog password to set on this container"
+    type: "string"
+    default: "admin"

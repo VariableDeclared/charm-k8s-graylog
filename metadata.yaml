@@ -1,0 +1,23 @@
+name: "graylog-k8s"
+summary: "Graylog charm for Kubernetes."
+maintainers:
+- "SolutionsQA <solutionsqa@lists.canonical.com>"
+description: |
+  A CAAS charm to deploy Graylog.
+tags:
+- application
+series:
+- "kubernetes"
+# provides:
+#   mongo:
+#     interface: "mongodb"
+resources:
+  graylog-image:
+    type: oci-image
+    description: Image used for Graylog pod.
+    auto-fetch: true
+    # upstream-source: "rocks.canonical.com:443/gr:latest"
+# "storage":
+#   "database":
+#     "type": "filesystem"
+#     "location": "/data/db"
