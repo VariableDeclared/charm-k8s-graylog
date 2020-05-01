@@ -1,0 +1,18 @@
+action: py38, msg: installpkg
+cwd: /home/pjds/canonical/repos/charm-k8s-graylog
+cmd: /home/pjds/canonical/repos/charm-k8s-graylog/.tox/py38/bin/python -m pip install --no-deps -U .tox/.tmp/package/1/charm-k8s-graylog-0.1.0.zip
+Processing ./.tox/.tmp/package/1/charm-k8s-graylog-0.1.0.zip
+Building wheels for collected packages: charm-k8s-graylog
+  Building wheel for charm-k8s-graylog (setup.py): started
+  Building wheel for charm-k8s-graylog (setup.py): finished with status 'done'
+  Created wheel for charm-k8s-graylog: filename=charm_k8s_graylog-0.1.0-py3-none-any.whl size=1365 sha256=de2babf353fdd303a4bf49d3a144dbf99c0bc1191cf6153186bd0dba29357e62
+  Stored in directory: /home/pjds/.cache/pip/wheels/e4/75/44/573e882b479dacf50ffff9c00ee711d061828f5d97f33796f7
+Successfully built charm-k8s-graylog
+Installing collected packages: charm-k8s-graylog
+  Attempting uninstall: charm-k8s-graylog
+    Found existing installation: charm-k8s-graylog 0.1.0
+    Not uninstalling charm-k8s-graylog at /home/pjds/canonical/repos/charm-k8s-graylog, outside environment /home/pjds/canonical/repos/charm-k8s-graylog/.tox/py38
+    Can't uninstall 'charm-k8s-graylog'. No files were found to uninstall.
+Successfully installed charm-k8s-graylog-0.1.0
+WARNING: You are using pip version 20.0.2; however, version 20.1 is available.
+You should consider upgrading via the '/home/pjds/canonical/repos/charm-k8s-graylog/.tox/py38/bin/python -m pip install --upgrade pip' command.

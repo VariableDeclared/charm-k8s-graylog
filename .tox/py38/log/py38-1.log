@@ -1,0 +1,42 @@
+action: py38, msg: getenv
+cwd: /home/pjds/canonical/repos/charm-k8s-graylog
+cmd: /home/pjds/canonical/repos/charm-k8s-graylog/.tox/py38/bin/python -m pip install -rtest-requirements.txt
+Collecting pyaml
+  Downloading pyaml-20.4.0-py2.py3-none-any.whl (17 kB)
+Collecting pytest
+  Downloading pytest-5.4.1-py3-none-any.whl (246 kB)
+Collecting pytest-cov
+  Downloading pytest_cov-2.8.1-py2.py3-none-any.whl (18 kB)
+Collecting flake8
+  Using cached flake8-3.7.9-py2.py3-none-any.whl (69 kB)
+Processing /home/pjds/.cache/pip/wheels/13/90/db/290ab3a34f2ef0b5a0f89235dc2d40fea83e77de84ed2dc05c/PyYAML-5.3.1-cp38-cp38-linux_x86_64.whl
+Collecting wcwidth
+  Using cached wcwidth-0.1.9-py2.py3-none-any.whl (19 kB)
+Collecting attrs>=17.4.0
+  Using cached attrs-19.3.0-py2.py3-none-any.whl (39 kB)
+Collecting more-itertools>=4.0.0
+  Downloading more_itertools-8.2.0-py3-none-any.whl (43 kB)
+Collecting py>=1.5.0
+  Using cached py-1.8.1-py2.py3-none-any.whl (83 kB)
+Collecting packaging
+  Using cached packaging-20.3-py2.py3-none-any.whl (37 kB)
+Collecting pluggy<1.0,>=0.12
+  Using cached pluggy-0.13.1-py2.py3-none-any.whl (18 kB)
+Collecting coverage>=4.4
+  Using cached coverage-5.1-cp38-cp38-manylinux1_x86_64.whl (229 kB)
+Collecting entrypoints<0.4.0,>=0.3.0
+  Using cached entrypoints-0.3-py2.py3-none-any.whl (11 kB)
+Collecting pyflakes<2.2.0,>=2.1.0
+  Using cached pyflakes-2.1.1-py2.py3-none-any.whl (59 kB)
+Collecting mccabe<0.7.0,>=0.6.0
+  Using cached mccabe-0.6.1-py2.py3-none-any.whl (8.6 kB)
+Collecting pycodestyle<2.6.0,>=2.5.0
+  Using cached pycodestyle-2.5.0-py2.py3-none-any.whl (51 kB)
+Collecting pyparsing>=2.0.2
+  Using cached pyparsing-2.4.7-py2.py3-none-any.whl (67 kB)
+Collecting six
+  Using cached six-1.14.0-py2.py3-none-any.whl (10 kB)
+Installing collected packages: PyYAML, pyaml, wcwidth, attrs, more-itertools, py, pyparsing, six, packaging, pluggy, pytest, coverage, pytest-cov, entrypoints, pyflakes, mccabe, pycodestyle, flake8
+Successfully installed PyYAML-5.3.1 attrs-19.3.0 coverage-5.1 entrypoints-0.3 flake8-3.7.9 mccabe-0.6.1 more-itertools-8.2.0 packaging-20.3 pluggy-0.13.1 py-1.8.1 pyaml-20.4.0 pycodestyle-2.5.0 pyflakes-2.1.1 pyparsing-2.4.7 pytest-5.4.1 pytest-cov-2.8.1 six-1.14.0 wcwidth-0.1.9
+WARNING: You are using pip version 20.0.2; however, version 20.1 is available.
+You should consider upgrading via the '/home/pjds/canonical/repos/charm-k8s-graylog/.tox/py38/bin/python -m pip install --upgrade pip' command.

@@ -14,7 +14,6 @@ from k8s import K8sPod
 from observers import (
     ConfigChangeObserver,
     StatusObserver,
-    RelationObserver,
 )
 
 logger = logging.getLogger()
@@ -69,7 +68,6 @@ class CharmGraylog(CharmBase):
             self._pod,
             self._graylog_builder
         ).handle(event)
-
 
 
 if __name__ == "__main__":

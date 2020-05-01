@@ -1,0 +1,7 @@
+action: py38, msg: getenv
+cwd: /home/pjds/canonical/repos/charm-k8s-graylog/.tox
+cmd: /home/pjds/.virtualenvs/charm-graylog/bin/python3 -m virtualenv --no-download --python /home/pjds/.virtualenvs/charm-graylog/bin/python3 py38
+created virtual environment CPython3.8.2.final.0-64 in 4771ms
+  creator CPython3Posix(dest=/home/pjds/canonical/repos/charm-k8s-graylog/.tox/py38, clear=False, global=False)
+  seeder FromAppData(download=False, pip=latest, setuptools=latest, wheel=latest, via=copy, app_data_dir=/home/pjds/.local/share/virtualenv/seed-app-data/v1.0.1)
+  activators BashActivator,CShellActivator,FishActivator,PowerShellActivator,PythonActivator,XonshActivator

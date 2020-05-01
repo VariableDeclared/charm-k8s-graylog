@@ -1,0 +1,33 @@
+action: GLOB, msg: packaging
+cwd: /home/pjds/canonical/repos/charm-k8s-graylog
+cmd: /home/pjds/.virtualenvs/charm-graylog/bin/python3 setup.py sdist --formats=zip --dist-dir .tox/dist
+running sdist
+running egg_info
+writing charm_k8s_graylog.egg-info/PKG-INFO
+writing dependency_links to charm_k8s_graylog.egg-info/dependency_links.txt
+writing top-level names to charm_k8s_graylog.egg-info/top_level.txt
+reading manifest file 'charm_k8s_graylog.egg-info/SOURCES.txt'
+writing manifest file 'charm_k8s_graylog.egg-info/SOURCES.txt'
+running check
+creating charm-k8s-graylog-0.1.0
+creating charm-k8s-graylog-0.1.0/charm_k8s_graylog.egg-info
+copying files to charm-k8s-graylog-0.1.0...
+copying README.md -> charm-k8s-graylog-0.1.0
+copying setup.py -> charm-k8s-graylog-0.1.0
+copying charm_k8s_graylog.egg-info/PKG-INFO -> charm-k8s-graylog-0.1.0/charm_k8s_graylog.egg-info
+copying charm_k8s_graylog.egg-info/SOURCES.txt -> charm-k8s-graylog-0.1.0/charm_k8s_graylog.egg-info
+copying charm_k8s_graylog.egg-info/dependency_links.txt -> charm-k8s-graylog-0.1.0/charm_k8s_graylog.egg-info
+copying charm_k8s_graylog.egg-info/top_level.txt -> charm-k8s-graylog-0.1.0/charm_k8s_graylog.egg-info
+Writing charm-k8s-graylog-0.1.0/setup.cfg
+creating '.tox/dist/charm-k8s-graylog-0.1.0.zip' and adding 'charm-k8s-graylog-0.1.0' to it
+adding 'charm-k8s-graylog-0.1.0'
+adding 'charm-k8s-graylog-0.1.0/charm_k8s_graylog.egg-info'
+adding 'charm-k8s-graylog-0.1.0/setup.py'
+adding 'charm-k8s-graylog-0.1.0/setup.cfg'
+adding 'charm-k8s-graylog-0.1.0/README.md'
+adding 'charm-k8s-graylog-0.1.0/PKG-INFO'
+adding 'charm-k8s-graylog-0.1.0/charm_k8s_graylog.egg-info/dependency_links.txt'
+adding 'charm-k8s-graylog-0.1.0/charm_k8s_graylog.egg-info/top_level.txt'
+adding 'charm-k8s-graylog-0.1.0/charm_k8s_graylog.egg-info/SOURCES.txt'
+adding 'charm-k8s-graylog-0.1.0/charm_k8s_graylog.egg-info/PKG-INFO'
+removing 'charm-k8s-graylog-0.1.0' (and everything under it)

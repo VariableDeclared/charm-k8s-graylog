@@ -6,12 +6,13 @@ sys.path.append('lib')
 from ops.model import (
     ActiveStatus,
     BlockedStatus,
-    WaitingStatus,
+    # WaitingStatus,
     MaintenanceStatus,
 )
 import logging
 
 logger = logging.getLogger()
+
 
 class BaseObserver:
 
@@ -33,11 +34,11 @@ class ConfigChangeObserver(BaseObserver):
             if not self._resources[resource].fetch(self._framework.resources):
                 self._framework.unit_status_set(
                     BlockedStatus(
-                        f"Missing or invalue image resource: {resource}"
+                        f"Missing or invalid image resource: {resource}"
                     )
                 )
                 logger.info(f"Missing or invalid image resource: {resource}")
-
+                return
             # Do we need this?
             # if not self._framework.unit_is_leader:
 

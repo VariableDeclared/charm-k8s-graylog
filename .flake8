@@ -1,4 +1,4 @@
 # https://flake8.pycqa.org/en/2.6.0/config.html
 [flake8]
-exclude = mod/*, lib/*, .tox
+exclude = mod/*, lib/*, .tox, charm-k8s-mongodb/*
 ignore = E402,W503,W504

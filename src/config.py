@@ -44,6 +44,6 @@ class GraylogConfig:
         # ]
 
         return {
-            GRAYLOG_KEY_MAP[key]: val
+            GRAYLOG_KEY_MAP.get(key, key): val
             for key, val in self._config.items()
         }

@@ -1,0 +1,22 @@
+action: py38, msg: envreport
+cwd: /home/pjds/canonical/repos/charm-k8s-graylog
+cmd: /home/pjds/canonical/repos/charm-k8s-graylog/.tox/py38/bin/python -m pip freeze
+attrs==19.3.0
+charm-k8s-graylog==0.1.0
+coverage==5.1
+entrypoints==0.3
+flake8==3.7.9
+mccabe==0.6.1
+more-itertools==8.2.0
+packaging==20.3
+pluggy==0.13.1
+py==1.8.1
+pyaml==20.4.0
+pycodestyle==2.5.0
+pyflakes==2.1.1
+pyparsing==2.4.7
+pytest==5.4.1
+pytest-cov==2.8.1
+PyYAML==5.3.1
+six==1.14.0
+wcwidth==0.1.9
