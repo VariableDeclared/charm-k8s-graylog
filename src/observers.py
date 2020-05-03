@@ -6,7 +6,7 @@ sys.path.append('lib')
 from ops.model import (
     ActiveStatus,
     BlockedStatus,
-    # WaitingStatus,
+    WaitingStatus,
     MaintenanceStatus,
 )
 import logging
@@ -57,6 +57,12 @@ class ConfigChangeObserver(BaseObserver):
                 MaintenanceStatus("Pod is not ready")
             )
             logger.info("Pod is not ready")
+
+        if not self._framework.model.relation_get("mongodb"):
+            self._framework.unit_status_set(
+                WaitingStatus("Waiting for mongodb relation")
+            )
+            logger.info("Waiting for mongodb relation.")
 
 
 class RelationObserver(BaseObserver):

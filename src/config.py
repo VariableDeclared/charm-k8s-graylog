@@ -12,7 +12,7 @@ GRAYLOG_DEFAULT_CONFIGURATION_MAP = {
     'graylog-pass':  # echo -n "admin" | sha256sum
     "8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918",
 }
-# TODO: Filter values as they come in
+# Apply a function to values as they come in
 GRAYLOG_CONFIG_FILTER_MAP = {
     'graylog-pass': sha256_string
 }
@@ -24,6 +24,7 @@ class GraylogConfig:
 
     def __init__(self, config):
         self._config = {
+            # Prepare values as they come in, if a function requires no processing, return unfiltered value.
             key: GRAYLOG_CONFIG_FILTER_MAP.get(key, lambda x: x)(value)
             for key, value in config.items()
         }

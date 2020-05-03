@@ -19,7 +19,7 @@ class GraylogServerEvents(EventsBase):
 
 
 class GraylogServer(Object):
-    on = MongoDbServerEvents()
+    on = GraylogServerEvents()
     state = StoredState()
 
     def __init__(self, charm, relation_name):
